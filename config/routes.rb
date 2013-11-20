@@ -1,8 +1,13 @@
 ShredEpidemic::Application.routes.draw do
+ 
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
-  root :to => "home#index"
+  root :to => "store#index", :via => :get
+  match 'store/:id' => 'store#show', :as => :store_product, :via => :get
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

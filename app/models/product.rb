@@ -1,10 +1,11 @@
 class Product < ActiveRecord::Base
   attr_accessible :description, :id, :name, :price, :quantity
 
-  validates :description, :id, :name, :price, :quantity, :presence => true
-  validates :price, :id, :quantity, :numericality => true
-  validates :id, :numericality => {:greater_than_or_equal_to => 0}
+  has_many :lineitem
+  has_many :order, :through => :lineitem 
+
+  validates :description, :name, :price, :quantity, :presence => true
+  validates :price, :quantity, :numericality => true
   validates :price, :numericality => {greater_than: 0.01}
-  validates :id, uniqueness: true
 
 end
