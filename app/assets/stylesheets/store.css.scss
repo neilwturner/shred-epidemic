@@ -1,3 +1,38 @@
 // Place all the styles related to the store controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(http://fonts.googleapis.com/css?family=Nosifer);
+
+html, section, div, body {
+	background-color: black;
+	background-image: url('background.jpg');
+}
+
+h1, p, h2, h3 {
+	color: #B4B4B4;
+}
+
+h1, h2 {
+	font-family: 'Nosifer', cursive;
+	color: red;
+}
+
+.style_image {
+	float: left;
+}
+
+body {
+
+width: 1000px;
+margin:10px auto;
+}
+
+.product {
+	border: 1px grey solid;
+	border-radius: 5px;
+	padding: 15px;
+	box-sizing: border-box;
+	margin: 5px auto;
+	width: 500px;
+	float: right;
+} 

@@ -1,16 +1,9 @@
+<%= image_tag("metal.gif", :class => "style_image", :alt => "Shred") %>
 <h1>Shred Epidemic</h1>
-<% @products.each do |product| %>
-	<section class="product">
-		<h2><%= product.name %></h2>
-		<div class="description">
-			<%= product.description %>
-		</div>
-		<p class="price">
-			<%= product.price %>
-		</p>
-		<p class="qty">
-			<%= product.quantity %>
-		</p>
-	</section>
-<%end%>
+<h2>Guitar Store</h2>
+</br>
+</br>
 
+<% @products.each do |product| %>
+	<%= render product %>
+<%end%>

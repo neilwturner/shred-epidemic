@@ -1,5 +1,10 @@
 ShredEpidemic::Application.routes.draw do
- 
+  resources :products
+  resources :customers
+  resources :orders
+  resources :lineitems
+  resources :provincestates
+
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
