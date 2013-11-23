@@ -28,11 +28,111 @@ margin:10px auto;
 }
 
 .product {
-	border: 1px grey solid;
+	border: 2px grey solid;
 	border-radius: 5px;
 	padding: 15px;
 	box-sizing: border-box;
 	margin: 5px auto;
-	width: 500px;
+	width: 350px;
 	float: right;
 } 
+
+.image {
+	border: 1px grey solid;
+	border-radius: 5px;
+	padding: 5px;
+	box-sizing: border-box;
+	margin: 5px auto;
+	float: right;
+}
+
+.description {
+	width: 150px;
+
+}
+
+nav#below  {
+	margin-right: 5px;
+	background: rgb(0, 0, 0);
+	background: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	background: -o-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	background: -ms-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	height: 40px;
+	width: 100%;
+	text-align: left;
+	
+}
+
+nav#below ul li {
+	vertical-align:-15px;
+	text-align: center;
+	display: inline;
+	font-family: "Segoe UI";
+	font-size: 130%;
+	letter-spacing: 1px;
+	margin-left: 25px;
+	font-weight: bolder;
+}
+
+nav#below a {
+	display: inline-block;
+	color: #CCCCCC;
+	font-weight: bolder;
+	border-bottom: none;
+	text-decoration: none;
+}
+
+nav#below a:hover {
+	color: red;
+}
+
+aside#side {
+	float: left;
+	margin-left: -23px;
+	width: 150px;
+	text-decoration: none;
+
+}
+
+aside#side ul li {
+
+	text-align: left;
+	font: "Segoe UI";
+	font-size: 110%;
+	font-weight: bolder;
+	color: black;
+	letter-spacing: 1px;
+	margin-left: 5px;
+	text-decoration: none;
+	list-style: none;
+
+}
+
+aside#side a {
+	
+	background: rgb(0, 0, 0);
+	background: -moz-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	background: -webkit-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	background: -o-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	background: -ms-linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(129, 129, 129) 100%);
+	width: 165px;
+	height: 25px;
+	padding-top: 13px;
+	padding-bottom: 7px;
+	padding-left: 10px;
+	text-align: left;
+	display: inline-block;
+	color: #CCCCCC;
+	font-weight: bolder;
+	border-bottom: none;
+	text-decoration: none;
+
+}
+
+
+aside#side a:hover {
+	color: red;
+}

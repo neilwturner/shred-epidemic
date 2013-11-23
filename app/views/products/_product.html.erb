@@ -1,5 +1,8 @@
 <section class="product">
 		<h3><%= link_to product.name, store_product_path(product) %></h3>
+		<% if product.image_filename %>
+			<p class="image"><%= image_tag product.image_filename %></p>
+			<% end %>
 		<div class="description">
 			<%= product.description %>
 		</div>
@@ -9,4 +12,5 @@
 		<p class="qty">
 			<%= product.quantity %>
 		</p>
+			
 	</section>
