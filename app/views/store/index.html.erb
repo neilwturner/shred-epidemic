@@ -1,8 +1,11 @@
 <%= image_tag("metal.gif", :class => "style_image", :alt => "Shred") %>
 <h1>Shred Epidemic</h1>
 <h2>Guitar Store</h2>
+<%= image_tag("checkout.jpg", :class => "style_checkout", :width => '100', :alt => "Checkout") %>
+<%= image_tag("free-shipping.gif", :class => "style_ship", :width => '200', :alt => "Free Shipping!") %>
 </br>
 </br>
+
 <nav id="below">
 	<ul>
 		<li><a href="#">Log In</a></li>
@@ -20,9 +23,32 @@
 		<li><a href="#">Amps</a></li>
 		<li><a href="#">Bass Guitars</a></li>
 		<li><a href="#">Accessories</a></li>
+		<li>Shop by brand:</li>
+		<li><%= image_tag("carvin-logo.jpg", :width => '175', :alt => "Carvin") %></li>
+		<li><%= image_tag("ibanez-logo.jpg", :width => '175', :alt => "Ibanez") %></li>
+		<li><%= image_tag("Mesa_Boogie.jpg", :width => '175', :alt => "Mesa") %></li>
+		<li><%= image_tag("Marshall_Logo1.jpg", :width => '175', :alt => "Marshall") %></li>
+		<li><%= image_tag("engl-logo.jpg", :width => '175', :alt => "Engl") %></li>
+		<li><%= image_tag("Diezel.jpg", :width => '175', :alt => "Diezel") %></li>
+		<li><%= image_tag("D_Addario_logo.jpg", :width => '175', :alt => "Daddario") %></li>
 	</ul>
 </aside>
 
 <% @products.each do |product| %>
 	<%= render product %>
 <%end%>
+
+<%= image_tag("newsletter_signup.jpg", :class => "style_news", :width => '350', :alt => "Newsletter") %>
+<%= image_tag("newsletter_signup2.jpg", :class => "style_newsII", :width => '350', :alt => "Newsletter") %>
+
+<footer id="foot">
+	<ul>
+		<li><a href="#">Contact</a></li>
+		<li><a href="#">Return Policy</a></li>
+		<li><a href="#">FAQ</a></li>
+		<li><a href="#">Events</a></li>
+		<li><a href="#">Payment</a></li>
+		<li><a href="#">Tech Support</a></li>
+	</ul>
+	<p>&copy;2013 Shred Epidemic</p>
+</footer>

@@ -1,16 +1,16 @@
 <section class="product">
 		<h3><%= link_to product.name, store_product_path(product) %></h3>
 		<% if product.image_filename %>
-			<p class="image"><%= image_tag product.image_filename %></p>
+			<p class="image"><%= image_tag product.image_filename, :width => '200' %></p>
 			<% end %>
-		<div class="description">
+		<p class="description">
 			<%= product.description %>
-		</div>
+		</p>
 		<p class="price">
-			<%= number_to_currency product.price %>
+			Sale: <%= number_to_currency product.price %>
 		</p>
 		<p class="qty">
-			<%= product.quantity %>
+			Stock: <%= product.quantity %>
 		</p>
 			
 	</section>
