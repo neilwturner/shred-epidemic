@@ -12,6 +12,10 @@ ShredEpidemic::Application.routes.draw do
   root :to => "store#index", :via => :get
   match 'store/:id' => 'store#show', :as => :store_product, :via => :get
   
+  match 'search' => 'store#search', :as => 'search', :via => :get
+
+  match 'search_results' => 'store#search_results', :as => 'search_results', :via => :post
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

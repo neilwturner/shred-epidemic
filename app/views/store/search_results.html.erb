@@ -1,0 +1,10 @@
+<h2>Search Results</h2>
+
+<% if @products.empty? %>
+<p>
+	Sorry, your search for enlightenment and '<%= params[:keywords] %>' returned no results.
+</p>
+<% end %>
+
+<%= render @products %>
+
