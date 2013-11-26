@@ -1,8 +1,10 @@
-<h2>Product Search</h2>
+<h2 class="search">Product Search</h2>
 
 <%= form_tag search_results_path do %>
 	<%= text_field_tag :keywords %>
 	<%= submit_tag 'Search' %>
-	
-
 <% end %>
+
+<h4 class="search">
+	<%= link_to 'Home', root_path %>
+</h4>
