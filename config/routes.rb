@@ -1,4 +1,5 @@
 ShredEpidemic::Application.routes.draw do
+  resources :catigories
   resources :products
   resources :customers
   resources :orders
@@ -16,6 +17,13 @@ ShredEpidemic::Application.routes.draw do
 
   match 'search_results' => 'store#search_results', :as => 'search_results', :via => :post
   
+   resources :products do
+      member do
+        get :add_item
+        get :remove_item
+      end
+  end
+   
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
