@@ -12,8 +12,12 @@ class StoreController < ApplicationController
   end
 
   def search_results
-  	#searching this way guards against SQL injection
-  	@products = Product.where("name LIKE ?", "%#{params[:keywords]}%")
+
+   # if params[:keywords] == "Accessories" 
+      
+   # else
+      @products = Product.where("name LIKE ?", "%#{params[:keywords]}%")
+    #end 
   end
 
   def sort_results
