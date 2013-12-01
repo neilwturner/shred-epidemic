@@ -20,7 +20,7 @@ ShredEpidemic::Application.routes.draw do
   match 'sort_results' => 'store#sort_results', :as => 'sort_results', :via => :get
   match 'sort_results_acc' => 'store#sort_results_acc', :as => 'sort_results_acc', :via => :get
   match 'sort_results_amp' => 'store#sort_results_amp', :as => 'sort_results_amp', :via => :get
-  #match 'sort_results_' => 'store#sort_results', :as => 'sort_results', :via => :get
+  match 'sort_results_bass' => 'store#sort_results_bass', :as => 'sort_results_bass', :via => :get
   #  resources :products do
   #     member do
   #       get :add_item

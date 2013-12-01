@@ -17,8 +17,19 @@ class StoreController < ApplicationController
   end
 
   def sort_results
-    
+  #Search by Guitar  
    @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 2"]
   end
 
+  def sort_results_acc  
+   @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 4"]
+  end
+
+  def sort_results_amp  
+   @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 1"]
+  end
+
+  def sort_results_bass  
+   @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 3"]
+  end
 end
