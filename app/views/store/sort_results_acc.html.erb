@@ -1,0 +1,13 @@
+<h2 class="search">Sort Results</h2>
+
+<% if @products.empty? %>
+<p class="search">
+	Sorry, we are currently out of stock of Guitars.
+</p>
+<% end %>
+
+<%= render @products %>
+</br>
+<h4 class="results">
+	<%= link_to 'Home', root_path %>
+</h4>

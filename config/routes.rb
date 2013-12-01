@@ -16,13 +16,17 @@ ShredEpidemic::Application.routes.draw do
   match 'search' => 'store#search', :as => 'search', :via => :get
 
   match 'search_results' => 'store#search_results', :as => 'search_results', :via => :post
-  
-   resources :products do
-      member do
-        get :add_item
-        get :remove_item
-      end
-  end
+
+  match 'sort_results' => 'store#sort_results', :as => 'sort_results', :via => :get
+  match 'sort_results_acc' => 'store#sort_results_acc', :as => 'sort_results_acc', :via => :get
+  match 'sort_results_amp' => 'store#sort_results_amp', :as => 'sort_results_amp', :via => :get
+  #match 'sort_results_' => 'store#sort_results', :as => 'sort_results', :via => :get
+  #  resources :products do
+  #     member do
+  #       get :add_item
+  #       get :remove_item
+  #     end
+  # end
    
 
   # The priority is based upon order of creation:

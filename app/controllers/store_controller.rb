@@ -16,4 +16,9 @@ class StoreController < ApplicationController
   	@products = Product.where("name LIKE ?", "%#{params[:keywords]}%")
   end
 
+  def sort_results
+    
+   @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 2"]
+  end
+
 end
