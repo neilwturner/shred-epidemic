@@ -5,4 +5,5 @@
 
 <%= render @product %>
 
-<p><%= image_tag("add.jpg", :class => "style_add", :width => '175', :alt => "Add") %></p>
+<p><%= link_to (image_tag("add.jpg", :class => "style_add", :width => '175', :alt => "Add")), cart_path %></p>
+

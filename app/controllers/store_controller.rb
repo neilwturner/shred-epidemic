@@ -58,15 +58,17 @@ def search_results_by_catigory
    
   end
 
+def cart
+  @product = Product.find(params[:id])
+  @cart = get_cart 
+  @cart.add_to_cart(@product)
+end
 
-  # def sort_by_catigory_keyword
-  #    if params[:keywords] == "Accessories"
-  #      @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 4"]
-  #    elsif params[:keywords] == "Guitars"
-  #     @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 2"]
-  #   elsif  params[:keywords] == "Bass"
-  #    @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 3"]
-  #   elsif  params[:keywords] == "Amps"
-  #     @products = Product.find_by_sql ["SELECT * FROM products WHERE catigory_id = 1"]
-  #   end
+ def get_cart 
+  if session[:cart] 
+    return session[:cart] 
+  else session[:cart] = Cart.new 
+    return session[:cart] 
+  end 
+end
 end
