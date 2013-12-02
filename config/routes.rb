@@ -17,10 +17,15 @@ ShredEpidemic::Application.routes.draw do
 
   match 'search_results' => 'store#search_results', :as => 'search_results', :via => :post
 
+
+  match 'search_by_catigory' => 'store#search_by_catigory', :as => 'search_by_catigory', :via => :get
+
+  match 'search_results_by_catigory' => 'store#search_results_by_catigory', :as => 'search_results_by_catigory', :via => :post
   match 'sort_results' => 'store#sort_results', :as => 'sort_results', :via => :get
   match 'sort_results_acc' => 'store#sort_results_acc', :as => 'sort_results_acc', :via => :get
   match 'sort_results_amp' => 'store#sort_results_amp', :as => 'sort_results_amp', :via => :get
   match 'sort_results_bass' => 'store#sort_results_bass', :as => 'sort_results_bass', :via => :get
+  #match 'sort_by_catigory_keyword' => 'store#sort_results_catigory_keyword', :as => 'sort_by_catigory_keyword', :via => :get
   #  resources :products do
   #     member do
   #       get :add_item

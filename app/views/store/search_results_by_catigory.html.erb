@@ -1,0 +1,13 @@
+<h2 class="search">Sort Results Based On Key Word By Category</h2>
+
+<% if @products.empty? %>
+<p class="search">
+	Sorry, '<%= params[:keywords] %>' is not a category.
+</p>
+<% end %>
+
+<%= render @products %>
+</br>
+<h4 class="results">
+	<%= link_to 'Home', root_path %>
+</h4>
