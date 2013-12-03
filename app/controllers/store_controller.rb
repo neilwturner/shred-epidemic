@@ -71,4 +71,12 @@ end
     return session[:cart] 
   end 
 end
+
+def about_us
+    @about = About.order('id DESC')
+  end
+
+  def contact_us
+    @contact = Contact.all
+  end
 end

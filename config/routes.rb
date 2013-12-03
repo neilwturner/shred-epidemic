@@ -1,4 +1,6 @@
 ShredEpidemic::Application.routes.draw do
+  resources :about
+  resources :contact
   resources :catigories
   resources :products
   resources :customers
@@ -26,6 +28,9 @@ ShredEpidemic::Application.routes.draw do
   match 'sort_results_amp' => 'store#sort_results_amp', :as => 'sort_results_amp', :via => :get
   match 'sort_results_bass' => 'store#sort_results_bass', :as => 'sort_results_bass', :via => :get
   match 'cart' => 'store#cart', :as => 'cart', :via => :get
+
+  match 'about_us' => 'store#about_us', :as => 'about_us', :via => :get
+  match 'contact_us' => 'store#contact_us', :as => 'contact_us', :via => :get
   #match 'sort_by_catigory_keyword' => 'store#sort_results_catigory_keyword', :as => 'sort_by_catigory_keyword', :via => :get
   #  resources :products do
   #     member do
