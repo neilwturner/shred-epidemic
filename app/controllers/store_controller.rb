@@ -73,10 +73,10 @@ end
 end
 
 def about_us
-    @about = About.order('id DESC')
+   @about_us = About.find(:all)
   end
 
   def contact_us
-    @contact = Contact.all
-  end
+   @contact_us = Contact.find(:all)
+end
 end
